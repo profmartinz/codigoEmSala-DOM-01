@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto DOM</title>
+    <link rel="stylesheet" href="style.css" media="all"> <!-- Se for usar CSS -->
+    <script src="script.js" defer></script> <!-- Importante usar 'defer' para boa prática -->
+</head>
+
+<body>
+    <h1>Introdução ao estudo do DOM</h1>
+
+    <h2 id="subtitulo">Elements: Tag, Class, Query Selector</h2>
+    <p class="mensagem">Primeiro Parágrafo</p>
+    <p class="mensagem">Segundo Parágrafo</p>
+    <p class="mensagem">Terceiro Parágrafo</p>
+
+    <h2>Element: Name</h2>
+    <input type="text" name="usuario" placeholder="Digite o primeiro nome">
+    <input type="text" name="usuario" placeholder="Digite o segundo nome">
+    <input type="text" name="email" placeholder="Digite seu email">
+    <button onclick="mostrarNome()">Mostrar Nome</button>
+
+    <script>
+        //Tag
+        //let paragrafos = document.getElementsByTagName('p')[0];
+        //alert(paragrafos.innerText)
+
+        //ID
+        //let titutoPrincipal = document.getElementById("subtitulo");
+        //alert(titutoPrincipal.innerText)
+
+        //Name
+        //function mostrarNome() {
+        //    let usuarios = document.getElementsByName('usuario');
+        //    alert(usuarios[1].value); // Vai mostrar o que foi digitado no primeiro input de usuário
+        //}
+
+        //Class
+        //let texto = document.getElementsByClassName('mensagem')[0];
+        //alert(texto.innerText)
+
+        //Query Selector
+        //let paragrafo = document.querySelector('.mensagem');
+        //alert(paragrafo.innerText);
+
+        //Query Selector All
+        // Pega TODOS os <p> com classe "mensagem"
+        /*let paragrafos = document.querySelectorAll('.mensagem');
+
+        for (let paragrafo of paragrafos) {
+            // Mostra o texto de cada parágrafo, um por um
+            alert(paragrafo.innerText);
+        }*/
+
+    </script>
+
+</body>
+
+</html>
